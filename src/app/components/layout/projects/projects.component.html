@@ -1,0 +1,9 @@
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <app-project-card
+      *ngFor="let projectEl of projects"
+      [project]="projectEl"
+    ></app-project-card>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+section {
+  animation: ZTransition 2s;
+  min-height: 72vh;
+}
+
+h2 {
+  color: inherit;
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px 0;
+}
+.contact-form {
+  width: 50%;
+  margin: auto;
+}
+
+.input-btn {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: rgb(17, 70, 56);
+}
+.input-btn:hover {
+  background-color: rgb(10, 245, 182);
+  color: rgb(17, 70, 56);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 80%;
+    margin: auto;
+  }
+}

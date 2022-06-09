@@ -1,0 +1,15 @@
+.body-section {
+}
+
+.body-section .footer-container {
+  animation: footerTransition 2s;
+}
+
+@keyframes footerTransition {
+  from {
+    transform: translateY(70px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

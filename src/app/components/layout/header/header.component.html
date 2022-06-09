@@ -1,0 +1,34 @@
+<header id="main-header" class="headerClass">
+  <a routerLink="/">Rafael Garcia</a>
+  <nav id="navbar">
+    <ul *ngIf="headerFullBrowserWidth">
+      <li routerLink="/about-me" routerLinkActive="active" class="about-me">
+        <a>ABOUT ME</a>
+      </li>
+      <li routerLink="/skills" routerLinkActive="active" class="skills">
+        <a>SKILLS</a>
+      </li>
+      <li routerLink="/projects" routerLinkActive="active" class="projects">
+        <a>PROJECTS</a>
+      </li>
+      <li
+        routerLink="/contact-me"
+        routerLinkActive="active"
+        class="hire-me call-attention"
+      >
+        <a>HIRE ME</a>
+      </li>
+      <li class="resume">
+        <a
+          class="btn"
+          href="/assets/documents/Rafael_Garcia_Resume_E.pdf"
+          download
+          >RESUME</a
+        >
+      </li>
+    </ul>
+    <div *ngIf="!headerFullBrowserWidth">
+      <app-hamburger></app-hamburger>
+    </div>
+  </nav>
+</header>

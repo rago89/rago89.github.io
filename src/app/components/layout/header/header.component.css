@@ -1,0 +1,139 @@
+header {
+  min-height: 100px;
+  width: 80%;
+  margin: auto;
+}
+
+#main-header > a {
+  font-size: 2rem;
+  font-weight: 500;
+  min-width: 300px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  animation: headerTransition 1.5s;
+}
+
+.headerClass {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-items: space-around;
+  align-items: center;
+}
+
+#navbar ul {
+  display: grid;
+  font-size: 24px;
+  grid-template-columns: repeat(5, 7rem);
+  justify-content: end;
+  justify-items: center;
+}
+
+/*NAV BAR*/
+#navbar li {
+  align-self: center;
+  list-style: none;
+}
+
+#navbar li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  justify-self: end;
+  color: #000;
+}
+
+#navbar li:hover,
+#navbar a:hover {
+  color: #187eb5;
+  cursor: pointer;
+}
+
+.btn {
+  animation: headerTransition 2.6s;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  #main-header > a {
+    display: none;
+  }
+  .headerClass {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main-header > a {
+    font-size: 2rem;
+  }
+  .headerClass {
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2;
+  }
+
+  #navbar ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: stretch;
+    justify-content: space-evenly;
+  }
+
+  #navbar ul li {
+    padding: 0%;
+    text-align: center;
+  }
+
+  #navbar ul li a {
+    font-size: 1rem;
+  }
+}
+
+/* animations */
+.about-me {
+  animation: headerTransition 1s;
+}
+
+.skills {
+  animation: headerTransition 1.4s;
+}
+
+.projects {
+  animation: headerTransition 1.8s;
+}
+
+.hire-me {
+  animation: headerTransition 2.2s;
+}
+
+.call-attention a {
+  animation-name: hireMe;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes headerTransition {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes hireMe {
+  from {
+    transform: scale(1.5);
+    text-shadow: 0 0 5px rgb(98, 98, 100);
+    color: #fff;
+  }
+  to {
+    transform: translateY(0px);
+    color: black;
+  }
+}
