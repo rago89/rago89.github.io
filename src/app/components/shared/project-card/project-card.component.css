@@ -20,10 +20,8 @@
 }
 .project-description ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0;
-  margin: 0 20px;
-  flex-wrap: wrap;
 }
 
 .project-description ul li {
