@@ -1,0 +1,86 @@
+#about-me {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 8rem auto;
+  grid-template-areas: " header header " "description photo";
+  justify-content: center;
+  min-height: 78vh;
+}
+
+#about-me h2 {
+  font-size: 4rem;
+  grid-area: header;
+  justify-self: center;
+  height: 5vh;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  width: 70%;
+  grid-area: description;
+  justify-self: center;
+  animation: horizontalImageTransitionFromLeft 2s;
+}
+
+#about-me img {
+  width: 60%;
+  grid-area: photo;
+  justify-self: start;
+  box-shadow: 20px 20px 20px rgb(17, 70, 56);
+  animation: horizontalImageTransitionFromRight 2s;
+  max-width: 300px;
+}
+
+.paragraph p {
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  /* about me*/
+  #about-me h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* about me*/
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 20px 40px;
+    align-items: center;
+  }
+
+  #about-me img {
+    width: 180px;
+    margin: 60px 0;
+  }
+
+  #about-me h2 {
+    font-size: 3rem;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #about-me h2 {
+    grid-area: title;
+    font-size: 24px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+    text-align: center;
+    grid-area: description;
+    justify-self: center;
+    animation: horizontalImageTransitionFromLeft540 2s;
+  }
+
+  #about-me img {
+    animation: horizontalImageTransitionFromRight540 2s;
+  }
+}

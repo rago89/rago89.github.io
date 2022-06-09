@@ -1,0 +1,31 @@
+<div class="project-card">
+  <div class="project-picture">
+    <img [src]="project?.picture" alt="project image" />
+  </div>
+  <div class="project-description">
+    <p>{{ project?.shortDescription }}</p>
+    <h3>{{ project?.title }}</h3>
+    <div>
+      <p class="description">{{ project?.description }}</p>
+    </div>
+    <ul>
+      <li *ngFor="let technology of project?.technologies">
+        {{ technology }}
+      </li>
+    </ul>
+
+    <div class="icons-container">
+      <a [href]="project?.githubUrl" target="_blank"
+        ><img
+          class="mini-img-project"
+          src="/assets/skills/octocat.png"
+          alt="Github Logo" /></a
+      ><a [href]="project?.pageUrl" target="_blank"
+        ><img
+          class="mini-img-project"
+          src="/assets/1024px-External_link_font_awesome.svg.png"
+          alt="Open Link Logo"
+      /></a>
+    </div>
+  </div>
+</div>

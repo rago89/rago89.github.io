@@ -1,0 +1,42 @@
+<div class="outer-menu">
+  <input class="checkbox-toggle" type="checkbox" #toggle />
+  <div class="hamburger">
+    <div></div>
+  </div>
+  <div class="menu">
+    <div>
+      <div>
+        <ul>
+          <li>
+            <a (click)="closeToggle(toggle)" routerLink="/about-me"
+              >Home page</a
+            >
+          </li>
+          <li>
+            <a (click)="closeToggle(toggle)" routerLink="/about-me">About me</a>
+          </li>
+          <li>
+            <a (click)="closeToggle(toggle)" routerLink="/skills">Skills</a>
+          </li>
+          <li>
+            <a (click)="closeToggle(toggle)" routerLink="/projects">Projects</a>
+          </li>
+          <li>
+            <a (click)="closeToggle(toggle)" routerLink="/contact-me"
+              >Hire me</a
+            >
+          </li>
+          <li>
+            <a
+              (click)="closeToggle(toggle)"
+              class="resume"
+              href="/assets/documents/Rafael_Garcia_Resume_E.pdf"
+              download
+              >RESUME</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
