@@ -32,7 +32,7 @@ export class ProjectsComponent implements OnInit {
     {
       shortDescription: 'First Portfolio',
       title: 'My first Portfolio',
-      description: `First portfolio created during Hack Your Future Belgium training, using GuiHub API to fetch the repos, they are sorted in all study projects, including final project and study journey`,
+      description: `First portfolio created during Hack Your Future Belgium training, using GuiHub API to fetch the repositories thar sorter as projects and study journey.`,
       technologies: ['JavaScript', 'Git', 'GitHub', 'Navigo', 'Vite'],
       picture: '/assets/projects/first-portfolio.png',
       githubUrl: 'https://github.com/rago89/my_first_portfolio.github.io',
