@@ -9,7 +9,7 @@ import { Project } from './project-interface';
 export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     {
-      shortDescription: 'Hack ypu future final Project refactored',
+      shortDescription: 'Hack Your Future Belgium final Project refactored',
       title: 'Hand and paw',
       description: ` A wep application for adopting animals, the users can create an
       account, edit profile, register an animal, edit the animal, add
@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
       pageUrl: 'https://hand-and-paw.herokuapp.com/#/',
     },
     {
-      shortDescription: 'Group project',
+      shortDescription: 'Group project at Hack Your Future Belgium',
       title: 'Javascript Quiz',
       description: `An app that contains 5 questions, if the user answer is wrong show the right answer, and at the end of the quiz shows the score, this can restart the quiz if is needed`,
       technologies: ['JavaScript', 'Git', 'GitHub', 'Navigo'],
