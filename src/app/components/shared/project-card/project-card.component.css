@@ -5,7 +5,9 @@
   justify-content: start;
   margin: 0px auto 50px auto;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #eb7317;
+  background-color: #1dd1b3;
+  box-shadow: 0 0 20px #036d33;
+  border-radius: 50px;
 }
 
 .project-description {
@@ -18,14 +20,17 @@
 }
 .project-description ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0;
+  margin: 0 20px;
+  flex-wrap: wrap;
 }
 
 .project-description ul li {
   list-style: none;
-  color: rgb(233, 233, 18);
-  font-size: 1rem;
+  color: rgb(2, 59, 42);
+  font-size: 1.3rem;
+  padding: 0 5px;
 }
 
 .description {
@@ -38,6 +43,10 @@
   justify-content: center;
 }
 
+.icons-container a {
+  align-self: center;
+}
+
 .mini-img-project {
   width: 50px;
   margin: 25px;
@@ -45,6 +54,7 @@
 
 .project-picture img {
   width: 100%;
+  border-radius: 50px 50px 0 0;
 }
 
 .project-picture img:hover {
