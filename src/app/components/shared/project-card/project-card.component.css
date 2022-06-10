@@ -5,7 +5,7 @@
   justify-content: start;
   margin: 0px auto 50px auto;
   grid-template-columns: repeat(2, 1fr);
-  background-color: rgb(17, 70, 56);
+  background-color: #eb7317;
 }
 
 .project-description {
