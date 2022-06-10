@@ -20,7 +20,7 @@
           class="mini-img-project"
           src="/assets/skills/octocat.png"
           alt="Github Logo" /></a
-      ><a [href]="project?.pageUrl" target="_blank"
+      ><a *ngIf="project?.pageUrl" [href]="project?.pageUrl" target="_blank"
         ><img
           class="mini-img-project"
           src="/assets/1024px-External_link_font_awesome.svg.png"

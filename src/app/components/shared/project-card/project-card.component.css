@@ -5,14 +5,15 @@
   justify-content: start;
   margin: 0px auto 50px auto;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #1dd1b3;
+  background-color: rgba(147, 248, 214, 0.6);
   box-shadow: 0 0 20px #036d33;
   border-radius: 50px;
+  padding-top: 50px;
 }
 
 .project-description {
   padding: 5% 5% 0 5%;
-  color: white;
+  color: inherit;
 }
 
 .project-description h3 {
@@ -29,13 +30,13 @@
 
 .project-description ul li {
   list-style: none;
-  color: rgb(2, 59, 42);
+  color: rgb(247, 104, 9);
   font-size: 1.3rem;
   padding: 0 5px;
 }
 
 .description {
-  color: white;
+  color: inherit;
   font-size: 1.5rem;
 }
 
@@ -55,7 +56,6 @@
 
 .project-picture img {
   width: 100%;
-  border-radius: 50px 50px 0 0;
 }
 
 .project-picture img:hover {
