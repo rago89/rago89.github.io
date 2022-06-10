@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
       description: `An app that contains 5 questions, if the user answer is wrong show the right answer, and at the end of the quiz shows the score, this can restart the quiz if is needed`,
       technologies: ['JavaScript', 'Git', 'GitHub', 'Navigo'],
       picture: '/assets/projects/javascript-quiz.png',
-      githubUrl: 'https://github.com/OksanaShulha/javascript-quiz',
+      githubUrl: 'https://github.com/rago89/javascript-quiz',
       pageUrl: 'https://rago89.github.io/javascript-quiz/',
     },
   ];
