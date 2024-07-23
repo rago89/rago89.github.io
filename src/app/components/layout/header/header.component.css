@@ -93,6 +93,12 @@ header {
   }
 }
 
+@media screen and (max-width: 280px) {
+  #main-header > a {
+    font-size: 1.8rem;
+  }
+}
+
 /* animations */
 .about-me {
   animation: headerTransition 1s;

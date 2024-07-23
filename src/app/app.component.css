@@ -1,8 +1,4 @@
-.body-section {
-  height: auto;
-}
-
-.body-section .footer-container {
+.footer-container {
   animation: footerTransition 2s;
 }
 
